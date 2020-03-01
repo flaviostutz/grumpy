@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+
+  grumpy:
+    build: .
+    image: flaviostutz/grumpy
+    volumes:
+      - ./samples:/samples
+    command: sleep 99999
+    # command: grumprun /samples/test.py
+
